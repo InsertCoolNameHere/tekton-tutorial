@@ -16,9 +16,6 @@ spec:
       containers:
       - name: picalc
         image: __IMAGE__@__DIGEST__
-        securityContext:
-          readOnlyRootFilesystem: true
-          runAsUser: 1000
         ports:
         - name: http-server
           containerPort: 8080
